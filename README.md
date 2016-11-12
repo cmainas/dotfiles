@@ -9,6 +9,9 @@
 </div>
 </div>
 
+This repo contains all configuration files that i use like .vimrc, .vim, .bashrc
+and more. 
+
 # Use vim configuration<a id="sec-1" name="sec-1"></a>
 
 To use my vim configuration, a simple copy of .vimrc and .vim files to your home
