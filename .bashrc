@@ -118,3 +118,4 @@ fi
 
 #My aliases
 alias mount_svista='sudo mount -t cifs //192.168.1.66/share /mnt/svista_share -o user=user,pass=monolinuxre,uid=1000'
+export PAGER=less
