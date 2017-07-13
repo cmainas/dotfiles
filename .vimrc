@@ -52,3 +52,7 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 "            \ '<C-x><C-u><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
 
 iab bashs #!/bin/bash 
+set tabstop=8
+set softtabstop=8
+set shiftwidth=8
+set noexpandtab
