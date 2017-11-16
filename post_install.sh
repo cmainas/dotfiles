@@ -1,5 +1,6 @@
 #/bin/bash
 
+## Some actions after installation of a apt distro
 YES=
 
 if [ "$1" = "-y" ]; then
