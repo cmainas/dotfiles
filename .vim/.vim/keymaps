@@ -17,15 +17,8 @@ nnoremap <Leader>5 :5b!<CR>
 "inoremap <Leader>4 <Esc>:4b<CR>
 "inoremap <Leader>5 <Esc>:5b<CR>
 nnoremap tree :e .<CR>
-nmap <Leader>q :w<Enter>:!(setsid<Space>xelatex<Space><C-R>%)<Enter>
 
 "change split from horizontal to horizontal 
 nmap <Leader>v <C-w>t<C-w>K
 "change split from horizontal to vertical 
 nmap <Leader>h <C-w>t<C-w>H
-
-
-" Latex 
-autocmd Filetype tex nnoremap <Leader>t :read /home/rancho/template.tex  
-autocmd Filetype tex nnoremap <Leader>c :read /home/rancho/code.tex  
-
