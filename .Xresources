@@ -2,7 +2,7 @@ setxkbmap -option grp:alt_shift_toggle us,gr
 
 
 !perl extensions
-URxvt.perl.ext-common: default,matcher
+URxvt.perl.ext-common: default,matcher,font-size
 URxvt.url-launcher: /usr/bin/firefox 
 URxvt.underlineURLs:  true
 
@@ -73,3 +73,7 @@ URxvt*color14: #54FFFF
 URxvt*color7:  #B2B2B2
 ! q
 URxvt*color15: #FFFFFF
+
+
+!! font-size key zoom in with Cntrl+=
+URxvt.keysym.C-equal:  font-size:increase
