@@ -2,8 +2,13 @@
 
 bl_dev=/sys/class/backlight/intel_backlight
 step=10
+prev=$(cat $bl_dev/brightness)
+echo >> /home/rancho/mpla
+echo $prev >> /home/rancho/mpla
 
 case $1 in
-	-) echo $(($(< $bl_dev/brightness) - $step)) >$bl_dev/brightness;;
-	+) echo $(($(< $bl_dev/brightness) + $step)) >$bl_dev/brightness;;
+	##-) echo $(($(< $bl_dev/brightness) - $step)) >$bl_dev/brightness;;
+	-) echo $(($prev - $step)) > $bl_dev/brightness;;
+	##+) echo $(($(< $bl_dev/brightness) + $step)) >$bl_dev/brightness;;
+	+) echo $(($prev + $step)) > $bl_dev/brightness;;
 esac
