@@ -25,7 +25,7 @@ directory is enough. Be aware of possible overwrtitting the existing one
 # Problems and contact<a id="sec-3" name="sec-3"></a>
 
 For any problems encountered when trying to use the above configurations
-please contact me at samtheandroid7@gmail.com. Feel free to contact me for 
+please contact me at xmrancho@protonmail.com. Feel free to contact me for 
 any reason you want at the same email.
 
 New files and upgrades of the current ones will be uploaded soon
