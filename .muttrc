@@ -1,0 +1,58 @@
+# Folder hooks
+folder-hook 'account.com.gmail.chm' 'source ~/.mutt/account.com.gmail.chm'
+folder-hook 'account.gr.mail.ntua.el' 'source ~/.mutt/account.gr.ntua.mail.el'
+
+# Macros for switching accounts
+
+macro index <F12> '<sync-mailbox><enter-command>source ~/.mutt/account.com.gmail.chm<enter><change-folder>!<enter>'
+macro index <F11> '<sync-mailbox><enter-command>source ~/.mutt/account.gr.ntua.mail.el<enter><change-folder>!<enter>'
+
+# Default account
+source ~/.mutt/account.com.gmail.chm
+
+# Set default text editor
+set editor = "vim"
+
+set mailcap_path = ~/.mutt/mailcap
+
+set ssl_starttls = yes
+set ssl_force_tls = yes
+set imap_check_subscribed
+set mail_check = 120
+set timeout = 300
+set imap_keepalive = 300
+set sort = 'reverse-last-date-received''
+auto_view text/html
+alternative_order text/plain text/html
+
+#-------- Color Theme {{{
+#------------------------------------------------------
+
+color hdrdefault cyan default
+color attachment yellow default
+
+color header brightyellow default "From: "
+color header brightyellow default "Subject: "
+color header brightyellow default "Date: "
+color header brightyellow default "To: "
+color header brightyellow default "User-agent: "
+
+color quoted cyan default
+color quoted1 green default
+color quoted2 cyan default
+color quoted3 green default
+
+color error     red             default         # error messages
+color message   white           default         # message  informational messages
+color indicator white           blue             # indicator for the "current message"
+color status    black           yellow            # status lines in the folder index sed for the mini-help line
+color tree      red             default         # the "tree" display of threads within the folder index
+color search    white           blue            # search matches found with search within the internal pager
+color markers   red             default         # The markers indicate a wrapped line hen showing messages with looong lines
+
+color index     yellow default  '~O'
+color index     yellow default  '~N'
+color index     brightred       default '~F'    # Flagged Messages are important!
+color index     red default    '~D'            # Deleted Mails - use dark color as these are already "dealt with"
+# }}}
+

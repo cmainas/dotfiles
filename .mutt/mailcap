@@ -1,0 +1,2 @@
+text/html; "firefox" %s >/dev/null 2>&1; needsterminal
+application/pdf; okular %s; print=okular %s
