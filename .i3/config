@@ -155,7 +155,9 @@ bar {
 
 #bindsym $mod+Delete exec i3lock
 bindsym $mod+w exec firefox
-bindsym --release Print exec "scrot -s ~/Pictures/screenshots/Screenshot-%H:%M-%d-%m-%Y.png"
+bindsym $mod+m exec urxvt -e mutt
+bindsym $mod+Home exec urxvt -e ranger
+bindsym --release Print exec "scrot -s ~/Pictures/screenshots/Screenshot-%Y-%m-%d-%H:%M:%S.png"
 bindsym $mod+p exec "scrot -s ~/Pictures/screenshots/Screenshot%Y-%m-%d%H:%M:%S.png"
 #exec_always --no-startup-id nm-applet
 #exec /home/rancho/bin/power.sh
