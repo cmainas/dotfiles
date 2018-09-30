@@ -1,17 +1,18 @@
 unmailboxes *
-set imap_user = "bale_to_gmail@gmail.com"
-set smtp_url = "smtp://bale_to_gmail@smtp.gmail.com:587/"
-set realname = "bale onoma"
+set imap_user = "charalampos.mainas@gmail.com"
+set smtp_url = "smtp://charalampos.mainas@smtp.gmail.com:587/"
+set realname = "Charalampos Mainas"
 set folder = "imaps://imap.gmail.com/"
 set spoolfile = "+INBOX"
 ##set postponed = "+Drafts"
 ##set record = "+SENT"
 set record = "+[Gmail]/Sent Mail"
 set postponed="+[Gmail]/Drafts"
+set trash="+[Gmail]/Trash"
 set header_cache = ~/.mutt/com.gmail.chm/cache/headers
 set message_cachedir = ~/.mutt/com.gmail.chm/cache/bodies
 set certificate_file = ~/.mutt/com.gmail.chm/certificates
-set from = "bale_to_gmail@gmail.com"
+set from = "charalampos.mainas@gmail.com"
 set ssl_starttls = yes
 set ssl_force_tls = yes
 bind editor <space> noop
@@ -19,6 +20,6 @@ macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
 macro index gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
 macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
 macro index gr "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to drafts"
-##macro index gr "<change-folder>=SENT<enter>" "Go to sent mails"
+macro index gt "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"
 
 
