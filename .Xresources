@@ -77,3 +77,4 @@ URxvt*color15: #FFFFFF
 
 !! font-size key zoom in with Cntrl+=
 URxvt.keysym.C-equal:  font-size:increase
+URxvt*urgentOnBell: true

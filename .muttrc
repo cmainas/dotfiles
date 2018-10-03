@@ -24,6 +24,7 @@ set imap_keepalive = 300
 set sort = 'reverse-last-date-received''
 auto_view text/html
 alternative_order text/plain text/html
+set beep_new
 
 #-------- Color Theme {{{
 #------------------------------------------------------
