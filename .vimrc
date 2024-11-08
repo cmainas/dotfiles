@@ -8,7 +8,14 @@ se  helplang=en
 "for assembly 
 let asmsyntax = "asm68k"
 
-source ~/.vim/keymaps
+if filereadable(expand("~/.vim/keymaps"))
+	source ${HOME}/.vim/keymaps
+else
+	source ${HOME}/dotfiles/.vim/keymaps
+endif
+if !filereadable(expand("~/.vim/colors/paps.vim"))
+	set runtimepath+=${HOME}/dotfiles/.vim/
+endif
 set incsearch
 set nocompatible 
 set number
