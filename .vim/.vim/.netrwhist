@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/rancho/Desktop/roh_L/algoritmoi_kai_polyplokothta_7o/askiseis/programmatistikes/seira1/ask2'
-let g:netrw_dirhist_2='/home/rancho/Desktop/roh_L/algoritmoi_kai_polyplokothta_7o/askiseis/programmatistikes/seira1'
-let g:netrw_dirhist_3='/home/rancho/Desktop/roh_L/algoritmoi_kai_polyplokothta_7o/askiseis/programmatistikes/seira1/ask1'
-let g:netrw_dirhist_4='/home/rancho/Desktop/roh_L/algoritmoi_kai_polyplokothta_7o/askiseis/programmatistikes/seira1/ask2'
-let g:netrw_dirhist_5='/home/rancho/Desktop/roh_L/algoritmoi_kai_polyplokothta_7o/askiseis/programmatistikes/seira2/ask1'
