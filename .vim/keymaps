@@ -1,3 +1,24 @@
+" Bash like keys for the command line
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+
+"nnoremap <C-a> <Home>
+"nnoremap <C-e> <End>
+
+" TODO Use Ctrl+Arrow to scroll up and down without moving the cursor
+"nnoremap <ESC>[a <C-e>
+"nnoremap <ESC>0a <C-e>
+"nnoremap ^[Oa <C-e>
+"nnoremap <ESC>[Oa <C-e>
+"nnoremap <C-i> <C-e>
+"nnoremap <C-Up> <C-E>
+
+" Ctrl-e: Go to end of line
+inoremap <C-e> <End>
+
 nnoremap <Leader>l :ls<CR>
 nnoremap <Leader>n :bn!<CR>
 nnoremap <Leader>p :bp!<CR>
