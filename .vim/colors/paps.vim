@@ -80,8 +80,8 @@ hi PMenuThumb guifg=#a8a8a8 guibg=#121212 guisp=#121212 gui=NONE ctermfg=248 cte
 hi PreCondit guifg=#767676 guibg=NONE guisp=NONE gui=NONE ctermfg=243 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#767676 guibg=NONE guisp=NONE gui=NONE ctermfg=10 ctermbg=NONE cterm=NONE
 hi Repeat guifg=#d75f00 guibg=NONE guisp=NONE gui=NONE ctermfg=166 ctermbg=NONE cterm=NONE
-hi Search guifg=#af005f guibg=#efd382 guisp=NONE gui=NONE ctermfg=125 ctermbg=80 cterm=NONE
-hi CurSearch guifg=#af005f guibg=#efd382 guisp=NONE gui=NONE ctermfg=125 ctermbg=229cterm=NONE
+hi Search guifg=#af005f guibg=#efd382 guisp=NONE gui=NONE ctermfg=125 ctermbg=144 cterm=NONE
+hi CurSearch guifg=#af005f guibg=#efd382 guisp=NONE gui=NONE ctermfg=125 ctermbg=80 cterm=NONE
 hi Special guifg=#d78700 guibg=NONE guisp=NONE gui=NONE ctermfg=166 ctermbg=NONE cterm=NONE
 hi SpecialChar guifg=#d78700 guibg=NONE guisp=NONE gui=NONE ctermfg=172 ctermbg=NONE cterm=NONE
 hi SpecialComment guifg=#d78700 guibg=NONE guisp=NONE gui=NONE ctermfg=172 ctermbg=NONE cterm=NONE
@@ -103,3 +103,16 @@ hi VertSplit guifg=#4e4e4e guibg=#4e4e4e guisp=#4e4e4e gui=NONE ctermfg=239 cter
 hi Visual guifg=#a8a8a8 guibg=#444444 guisp=#444444 gui=NONE ctermfg=248 ctermbg=238 cterm=NONE
 hi cursorim guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
 hi underline guifg=#afafff guibg=NONE guisp=NONE gui=NONE ctermfg=147 ctermbg=NONE cterm=NONE
+
+" --- Diff colors (GitHub-like) ---
+highlight DiffAdd    guibg=#e6ffed guifg=#24292e ctermbg=150 ctermfg=0
+highlight DiffChange guibg=#fff5b1 guifg=#24292e ctermbg=216 ctermfg=0
+highlight DiffDelete guibg=#ffeef0 guifg=#82071e ctermbg=131 ctermfg=15
+highlight DiffText   guibg=#ffdf5d guifg=#24292e ctermbg=221 ctermfg=0
+
+" Optional: make removed text less noisy (like GitHub)
+highlight! link DiffRemoved DiffDelete
+highlight! link DiffAdded DiffAdd
+
+" Improve visibility of inline changes
+highlight DiffText gui=bold cterm=bold
